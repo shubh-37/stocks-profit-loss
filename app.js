@@ -26,6 +26,7 @@ function clickHandler(){
 
         //processing the input as well as rendering the output
     if(calculateValue > 0){
+        output.style.display = "block";
         output.innerText = `Yay you made net profit of ${calculateValue} and your percentage profit is ${percentageValue}% 🥳`
     }else if(calculateValue === 0){
         output.innerText = "No pain no gain and, no gain no pain 🧐";
@@ -35,6 +36,7 @@ function clickHandler(){
     }else{
         // error handler
         output.innerText = "Please enter all the inputs to get the result!";
+        output.style.display = "block";
     }
     
 }

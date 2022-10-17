@@ -6,6 +6,7 @@ body{
     text-align: center;
     background-color: var(--background-color);
     color: var(--text-color);
+    margin: 0px;
 }
 
 label{
@@ -15,11 +16,18 @@ label{
     margin: 0.5rem;
 }
 
+.page-container{
+    position: relative;
+    min-height: 100vh;
+    margin-top: 1rem;
+}
+
 .container{
     display: block;
-    border: 1px solid;
     width: 50%;
+    border: 1px solid;
     margin: auto;
+    padding-bottom: 1rem;
 }
 
 .heading{
@@ -28,8 +36,19 @@ label{
     padding: 0.5rem;
 }
 
+#initial-price{
+    width: 50%;
+}
+
+#current-price{
+    width: 50%;
+}
+
+#quantity{
+    width: 50%;
+}
+
 #evaluate-btn{
-    width: 20%;
     margin: 0.5rem;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -38,9 +57,45 @@ label{
 }
 
 #output{
+    display: none;
     margin: 0.5rem;
     border: 1px dotted;
     padding: 0.5rem;
+} 
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border-radius: 1rem 1rem 0rem 0rem;
+    padding: 1rem;
 }
+
+.footer-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.list-non-bullet{
+    list-style-type: none;
+    margin: 0px;
+    padding-inline-start: 0.8rem;
+    padding: 1rem;
+}
+
+.list-item-inline{
+    display: inline;
+    padding: 1rem;
+}
+
+.link{
+    color: var(--background-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
 
 
