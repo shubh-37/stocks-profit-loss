@@ -29,14 +29,14 @@ function clickHandler(){
     if(calculateValue > 0){
         output.style.display = "block";
         output.style.color = "green";
-        output.innerText = `Yay you made net profit of ${calculateValue} and your percentage profit is ${percentageValue}% 🥳`
+        output.innerText = `Yay you made net profit of ${calculateValue.toFixed(2)} and your percentage profit is ${percentageValue.toFixed(2)}% 🥳`
     }else if(calculateValue === 0){
         output.style.display = "block";
         output.innerText = "No pain no gain and, no gain no pain 🧐";
     }else{
         output.style.display = "block";
         output.style.color = "red";
-        output.innerText = `Oops, you made net loss of ${calculateValue} and your percentage loss is ${percentageValue}% 😔`
+        output.innerText = `Oops, you made net loss of ${calculateValue.toFixed(2)} and your percentage loss is ${percentageValue.toFixed(2)}% 😔`
     }
         }else{
             //error handler
